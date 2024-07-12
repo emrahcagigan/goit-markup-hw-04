@@ -470,8 +470,16 @@ header nav .head-logo {
 
 /* section-footer */
 
+.section-footer {
+  display: flex;
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 18px;
+  height: auto;
+}
 .container-footer {
   display: flex;
+  align-items: baseline;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -487,16 +495,13 @@ footer {
   margin-right: 120px;
 }
 
-.section-footer {
-  display: flex;
-  font-family: "raleway";
-  font-weight: 700;
-  font-size: 18px;
-  height: auto;
-}
-
-.footer-social p {
+.social-paragraph {
   margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
 .social-list {
@@ -504,19 +509,30 @@ footer {
   gap: 16px;
 }
 
-.social-div ul .social-links {
+.social-div {
   display: flex;
-  flex-direction: row;
   gap: 16px;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  list-style: none;
-  height: 40px;
-  width: 40px;
-  transition: 250ms;
+
 }
 
-.social-div ul .social-links:hover {
+.social-links {
+  height: 40px;
+  width: 40px;
+}
+
+.social-alinks {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-alinks:hover,
+.social-alinks:focus {
   background-color: #31d0aa;
 }
 
