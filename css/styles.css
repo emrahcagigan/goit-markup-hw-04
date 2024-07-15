@@ -262,6 +262,7 @@ header nav .head-logo {
 }
 
 .svg-icon-two {
+  display: flex;
   width: 64;
   height: 64;
 }
@@ -314,6 +315,37 @@ header nav .head-logo {
 
 .div-team {
   padding: 32px 0;
+}
+
+.div-team-social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-social-li {
+  width: 40px;
+  height: 40px;
+  list-style-type: none;
+}
+
+.team-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #404bbf;
+}
+
+.svg-icon-two {
+  fill: #f4f4fd;
 }
 
 .container-team .three-list {
@@ -566,6 +598,8 @@ footer {
 .svg-icon-footer {
   fill: #f4f4fd;
   position: absolute;
+  width: 24px;
+  height: 24px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
